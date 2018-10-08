@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo
+
+echo "choose the below option"
+
+echo
+
+echo "Are u an IT employee"
+
+echo
+
+echo "if yes choose 1  or 2"
+
+echo
+
+read option1
+
+echo
+
+result=$option1
+
+if [ $result -eq 1 ]; then
+echo "You are working in IT so why u are expecting holidays"
+else
+echo "Happy Independence day"
+exit 0
+fi

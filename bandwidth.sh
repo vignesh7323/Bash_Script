@@ -1,7 +1,7 @@
 #!/bin/bash
 Code:
 SNMPCOMMUNITY=public
-IP=10.20.201.32
+IP=***
 INTNUMBER=1
 OUT=$(snmpget -v2c -c $SNMPCOMMUNITY $IP ifOutOctets.$INTNUMBER | awk '{print $4}')
 IN=$(snmpget -v2c -c $SNMPCOMMUNITY $IP ifInOctets.$INTNUMBER | awk '{print $4}')

@@ -12,8 +12,8 @@ echo $MEMORY
 THRESHOLD=300
 
 if [ $MEMORY -lt $THRESHOLD ]; then
-echo "Memory is critical"
+echo "Memory is normal"
 #mail -s "Memory is critical for the server "IP email" <<< "message"
 else
-echo "Memory is normal" 
+echo "Memory is critical" 
 fi

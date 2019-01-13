@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 echo reading server memory
 
 MEMORY=$(free -m -h | grep Mem | awk '{print $7}'| cut -d'M' -f1)
